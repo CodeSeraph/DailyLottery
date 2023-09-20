@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slot Machine Spinner</title>
+    <audio id="spinSound" preload="auto">
+        <source src="slot-short.mp3" type="audio/mpeg">
+        <!-- You can provide multiple source elements for compatibility -->
+        Your browser does not support the audio element.
+      </audio>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            CC Daily Stand Up Lottery
+        </h1>
+        <div class="slot-machine">
+            <div class="reel">
+                <div id="name1" class="name"></div>
+            </div>
+            <div class="reel">
+                <div id="name2" class="name"></div>
+            </div>
+            <div class="reel">
+                <div id="name3" class="name"></div>
+            </div>
+        </div>
+        <button id="spin-button">Spin</button>
+        <div class="result-container">
+            <h2>Winner:</h2>
+            <p id="winner-name"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
