@@ -63,20 +63,20 @@ function rotateNames() {
       let maxCount = 0;
 
       for (const name in nameCounts) {
-        if (nameCounts[name] >= 2 && nameCounts[name] > maxCount) {
+        if (nameCounts[name] >= maxCount) {
           mostCommonName = name;
           maxCount = nameCounts[name];
         }
       }
 
-      if (mostCommonName) {
-        // Display the most common name as the winner
-        winnerName.textContent = mostCommonName;
-      } else {
-        // If no name appears at least twice, pick a random name
-        const randomIndex = Math.floor(Math.random() * names.length);
-        winnerName.textContent = names[randomIndex];
+      if (maxCount === 1) {
+        // If all names are different, pick one at random
+        mostCommonName =
+          spinnerResults[Math.floor(Math.random() * spinnerResults.length)];
       }
+
+      // Display the most common name as the winner
+      winnerName.textContent = mostCommonName;
 
       resultContainer.style.display = "block";
     } else {
