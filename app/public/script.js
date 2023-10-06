@@ -10,11 +10,10 @@ const names = [
   "Torben",
   "Steven",
   "Stepan",
-  "Rob",
   "Osman",
   "Victorine",
   "Mathijs",
-  "Patty",
+  "Wilfred",
   // Add more names here
 ];
 
