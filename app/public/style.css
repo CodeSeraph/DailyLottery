@@ -75,6 +75,15 @@ h2 {
   font-weight: bold;
 }
 
+.centered-image {
+  text-align: center;
+}
+
+.centered-image img {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Confetti animation */
 .confetti {
   position: fixed;
