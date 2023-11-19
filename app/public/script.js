@@ -148,7 +148,7 @@ spinButton.addEventListener("click", () => {
 });
 
 function showPartyPopper() {
-  const confettiCount = 400; // Increase the number of confetti particles
+  const confettiCount = 1000; // Increase the number of confetti particles
   const particleSize = 3; // Decrease the size of each particle
 
   for (let i = 0; i < confettiCount; i++) {
